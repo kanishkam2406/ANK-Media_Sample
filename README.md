@@ -85,10 +85,4 @@ A cinematic, editorial-style camera store landing experience inspired by Sony Al
 
 ---
 
-## Deploy to Vercel
 
-Deploy directly from terminal:
-`ash
-npx vercel
-`
-Or import this repository directly in the Vercel Dashboard (https://vercel.com/new).
