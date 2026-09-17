@@ -75,11 +75,15 @@
       <div class="hero-subject-wrapper">
         <div class="statue-glow"></div>
         <img 
-          src="assets/statue-hero.png" 
+          src="assets/statue-hero.png?v=2" 
           alt="Classical marble statue holding a black Sony Alpha mirrorless camera" 
           class="statue-cutout"
           id="statue-hero-img"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
           draggable="false"
+          onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/kanishkam2406/ANK-Media_Sample/main/assets/statue-hero.png';"
         >
       </div>
 
