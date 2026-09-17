@@ -1,0 +1,9 @@
+﻿*.py
+*.png
+*.txt
+*.mp4
+debug*
+test*
+*preview.html
+.git
+.agents

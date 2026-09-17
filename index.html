@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sony Alpha | Capture More Than Moments</title>
+  <meta name="description" content="Professional grade cameras for every creator. Experience the Sony Alpha series mirrorless cameras and lenses.">
+  
+  <!-- Fonts: Bebas Neue for editorial condensed headline, Plus Jakarta Sans & Inter for UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lenis Smooth Scroll Engine -->
+  <script src="lenis.min.js"></script>
+  
+  <!-- GSAP & ScrollTrigger for high-performance 3D video scrubbing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Atmospheric Background -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-diagonal-grid"></div>
+    <div class="bg-vignette"></div>
+    <div class="bg-glow"></div>
+  </div>
+
+  <div class="viewport-wrapper">
+    <!-- Top Navigation Header -->
+    <header class="site-header" id="site-header">
+      <div class="header-left">
+        <a href="#home" class="brand-logo" aria-label="Sony Home">
+          <span class="sony-brand-text">SONY</span>
+        </a>
+      </div>
+
+      <nav class="header-center" aria-label="Primary Navigation">
+        <ul class="nav-pill-group">
+          <li><a href="#home" class="nav-pill active">HOME</a></li>
+          <li><a href="#cameras" class="nav-pill">CAMERAS</a></li>
+          <li><a href="#lenses" class="nav-pill">LENSES</a></li>
+          <li><a href="#accessories" class="nav-pill">ACCESSORIES</a></li>
+          <li><a href="#support" class="nav-pill">SUPPORT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a href="#shop" class="btn-clean btn-shop" id="shop-now-btn">
+          <span class="btn-text">SHOP NOW</span>
+          <span class="btn-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Hero Viewport -->
+    <main class="hero-stage">
+      
+      <!-- Massive Background Typography (Z-Index behind statue) -->
+      <div class="hero-typography-backdrop" aria-hidden="true">
+        <h1 class="giant-headline">
+          <span class="headline-line line-1">CAPTURE MORE</span>
+          <span class="headline-line line-2">THAN MOMENTS</span>
+        </h1>
+      </div>
+
+      <!-- Foreground Classical Statue Holding Sony Mirrorless Camera -->
+      <div class="hero-subject-wrapper">
+        <div class="statue-glow"></div>
+        <img 
+          src="assets/statue-hero.png" 
+          alt="Classical marble statue holding a black Sony Alpha mirrorless camera" 
+          class="statue-cutout"
+          id="statue-hero-img"
+          draggable="false"
+        >
+      </div>
+
+      <!-- Left Interactive Composition Column -->
+      <div class="hero-left-column">
+        
+        <!-- Mountain Viewfinder Focus Card -->
+        <div class="viewfinder-card">
+          <div class="focus-reticle top-left"></div>
+          <div class="focus-reticle top-right"></div>
+          <div class="focus-reticle bottom-left"></div>
+          <div class="focus-reticle bottom-right"></div>
+          <img src="assets/mountain.jpg" alt="Dramatic mountain landscape shot on Sony Alpha" class="viewfinder-img">
+        </div>
+
+        <!-- Series Label & Professional Tagline -->
+        <div class="series-meta">
+          <h2 class="series-title">SONY ALPHA SERIES</h2>
+          <p class="series-subtitle">
+            PROFESSIONAL GRADE CAMERAS<br>
+            FOR EVERY CREATOR
+          </p>
+        </div>
+
+        <!-- Feature Row with 3 Badges -->
+        <div class="feature-row">
+          
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <!-- Camera Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span>LATEST</span>
+              <span>TECHNOLOGY</span>
+            </div>
+          </div>
+
+          <div class="feature-divider" aria-hidden="true"></div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <!-- Shield Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span>GENUINE</span>
+              <span>PRODUCTS</span>
+            </div>
+          </div>
+
+          <div class="feature-divider" aria-hidden="true"></div>
+
+          <div class="feature-item">
+            <div class="feature-icon" aria-hidden="true">
+              <!-- Fast Delivery Truck Icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span>FAST & SECURE</span>
+              <span>DELIVERY</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lower-Left Editorial Description (Clean, Human, No EM Dash) -->
+        <div class="editorial-block">
+          <div class="accent-line" aria-hidden="true"></div>
+          <p class="editorial-text">
+            From breathtaking landscapes to everyday stories, capture it all with <strong>Sony.</strong>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom-Right Floating CTA Button (Clean, Aesthetic, No Shiny Gradient) -->
+      <div class="hero-right-cta">
+        <a href="#explore" class="btn-clean btn-explore" id="explore-cameras-btn">
+          <span class="btn-text">EXPLORE SONY CAMERAS</span>
+          <span class="btn-arrow" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Subtle Scroll Down Indicator -->
+      <a href="#showcase-3d" class="hero-scroll-prompt" aria-label="Scroll to 3D Inspection">
+        <span class="scroll-track-line">
+          <span class="scroll-dot"></span>
+        </span>
+        <span class="scroll-label">EXPLORE 3D CHASSIS</span>
+      </a>
+
+    </main>
+  </div>
+
+  <!-- 3D Fullscreen Video Scrubbing Section (GSAP ScrollTrigger Pinned) -->
+  <section class="section-3d-showcase" id="showcase-3d" aria-label="Sony Alpha 3D Interactive Inspection">
+    <div class="showcase-sticky-frame">
+      
+      <!-- Central 3D Video / Canvas Stage (Full Screen Cover) -->
+      <div class="showcase-video-stage">
+        <div class="video-container">
+          <!-- Hardware-Accelerated 192-Frame Scrubbing Canvas filling the full viewport -->
+          <canvas id="camera-3d-canvas" class="canvas-3d-player" width="1280" height="720" role="img" aria-label="Interactive 3D Sony Alpha Camera Model"></canvas>
+          <!-- Cinematic subtle vignette blend -->
+          <div class="video-blend-gradient" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Ambient Grid & Radial Dark Lighting -->
+      <div class="showcase-ambient" aria-hidden="true">
+        <div class="showcase-grid-bg"></div>
+        <div class="showcase-radial-core"></div>
+      </div>
+
+      <!-- HUD Top Header -->
+      <div class="showcase-hud-header">
+        <div class="hud-tag">
+          <span class="hud-pulse" aria-hidden="true"></span>
+          <span class="hud-label">SONY ALPHA 360 PRECISION INSPECTION</span>
+        </div>
+        <div class="hud-rotation">
+          <span class="hud-degree-val" id="hud-rotation-val">000</span>
+          <span class="hud-degree-unit">° CAD AXIS</span>
+        </div>
+      </div>
+
+      <!-- Contextual Callouts (Alternating Left & Right - Clean, Human Readable Copy) -->
+      <div class="callout-container" aria-live="polite">
+        
+        <!-- Callout 1: Left (Chassis Build) -->
+        <article class="hud-callout callout-left" id="callout-1" data-step="1">
+          <div class="callout-glass">
+            <div class="callout-top-row">
+              <span class="callout-index">01</span>
+              <span class="callout-category">CHASSIS & DURABILITY</span>
+            </div>
+            <h3 class="callout-title">Magnesium Alloy Body</h3>
+            <p class="callout-desc">Constructed from rigid magnesium alloy with complete weather sealing to protect your work in rain, dust, and freezing conditions.</p>
+            <div class="callout-stat">
+              <span class="stat-number">695<small>G</small></span>
+              <span class="stat-text">Lightweight weather sealed body</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Callout 2: Right (Sensor & Resolution) -->
+        <article class="hud-callout callout-right" id="callout-2" data-step="2">
+          <div class="callout-glass">
+            <div class="callout-top-row">
+              <span class="callout-index">02</span>
+              <span class="callout-category">FULL FRAME SENSOR</span>
+            </div>
+            <h3 class="callout-title">61.0 Megapixel Clarity</h3>
+            <p class="callout-desc">A back-illuminated sensor delivering lifelike detail, wide dynamic range, and authentic color rendering.</p>
+            <div class="callout-stat">
+              <span class="stat-number">15+<small>STOPS</small></span>
+              <span class="stat-text">Dynamic range performance</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Callout 3: Left (Autofocus System) -->
+        <article class="hud-callout callout-left" id="callout-3" data-step="3">
+          <div class="callout-glass">
+            <div class="callout-top-row">
+              <span class="callout-index">03</span>
+              <span class="callout-category">AUTOFOCUS TRACKING</span>
+            </div>
+            <h3 class="callout-title">Real Time Subject Recognition</h3>
+            <p class="callout-desc">Intelligent tracking locks onto eyes, faces, wildlife, and moving subjects across the entire composition.</p>
+            <div class="callout-stat">
+              <span class="stat-number">693<small>POINTS</small></span>
+              <span class="stat-text">Focal plane detection</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Callout 4: Right (Motion & Cinema) -->
+        <article class="hud-callout callout-right" id="callout-4" data-step="4">
+          <div class="callout-glass">
+            <div class="callout-top-row">
+              <span class="callout-index">04</span>
+              <span class="callout-category">MOTION & CINEMA</span>
+            </div>
+            <h3 class="callout-title">8K and 4K Cinema Recording</h3>
+            <p class="callout-desc">Record 10-bit 4:2:2 video with natural film color profiles and 8 stops of optical image stabilization.</p>
+            <div class="callout-action-row">
+              <a href="#site-footer" class="btn-clean btn-callout">
+                <span class="btn-text">EXPLORE THE ALPHA SERIES</span>
+                <span class="btn-arrow" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- HUD Bottom Scrubber Bar -->
+      <div class="showcase-hud-footer">
+        <div class="scrubber-track-bar">
+          <div class="scrubber-progress-fill" id="scrubber-progress"></div>
+        </div>
+        <div class="scrubber-steps">
+          <span class="scrubber-node active" id="node-1">CHASSIS</span>
+          <span class="scrubber-node" id="node-2">SENSOR</span>
+          <span class="scrubber-node" id="node-3">AI FOCUS</span>
+          <span class="scrubber-node" id="node-4">CINEMA</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Editorial Arched Brand Footer with Vertical Brand Sidebar -->
+  <footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="footer-arched-card">
+      <div class="footer-card-layout">
+        
+        <!-- Left & Center Content Area -->
+        <div class="footer-main-content">
+          <div class="footer-content-grid">
+            
+            <!-- Brand Statement & Copyright Column -->
+            <div class="footer-brand-col">
+              <h2 class="footer-headline">Empowering happier, more inspired creators. One frame at a time.</h2>
+              <p class="footer-copyright">© 2026 Sony Alpha / Site and Brand for Creators Worldwide</p>
+            </div>
+
+            <!-- Navigation & Support Columns -->
+            <div class="footer-links-col">
+              <div class="footer-nav-group">
+                <h3 class="footer-group-title">NAVIGATION</h3>
+                <ul class="footer-link-list">
+                  <li><a href="#cameras">Shop</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#learn">Learn</a></li>
+                  <li><a href="#stores">Find A Store</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav-group">
+                <h3 class="footer-group-title">SUPPORT</h3>
+                <ul class="footer-link-list">
+                  <li><a href="#contact">Contact Us</a></li>
+                  <li><a href="#shipping">Shipping & Returns</a></li>
+                  <li><a href="#support">Customer Support</a></li>
+                  <li><a href="#privacy">Privacy Policy</a></li>
+                  <li><a href="#affiliates">Affiliates</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Newsletter Subscription & Social Links Column -->
+            <div class="footer-newsletter-col">
+              <div class="newsletter-block">
+                <h3 class="footer-group-title">GET THE LATEST FROM SONY.</h3>
+                <form class="newsletter-pill-form" id="footer-newsletter-form">
+                  <input 
+                    type="email" 
+                    class="newsletter-input" 
+                    id="newsletter-email" 
+                    placeholder="Email Address" 
+                    required 
+                    aria-label="Email Address for newsletter"
+                  >
+                  <button type="submit" class="newsletter-btn" id="newsletter-btn">Subscribe</button>
+                </form>
+                <div class="newsletter-feedback" id="newsletter-feedback" aria-live="polite"></div>
+              </div>
+
+              <div class="social-block">
+                <h3 class="footer-group-title">FOLLOW US</h3>
+                <div class="social-icon-row">
+                  <a href="https://instagram.com" class="social-circle" aria-label="Follow Sony on Instagram" target="_blank" rel="noopener">
+                    <!-- Instagram Icon -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                  <a href="https://tiktok.com" class="social-circle" aria-label="Follow Sony on TikTok" target="_blank" rel="noopener">
+                    <!-- TikTok Icon -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                    </svg>
+                  </a>
+                  <a href="https://facebook.com" class="social-circle" aria-label="Follow Sony on Facebook" target="_blank" rel="noopener">
+                    <!-- Facebook Icon -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dedicated Right Vertical Brand Sidebar (Complete 'y', unclipped) -->
+        <aside class="footer-vertical-brand" aria-label="Sony brand mark">
+          <span class="vertical-wordmark">sony</span>
+        </aside>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "frameCount": 192,
+  "width": 1280,
+  "height": 720,
+  "pattern": "assets/frames/frame_{index}.jpg",
+  "pad": 4
+}
