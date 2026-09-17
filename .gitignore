@@ -1,8 +1,10 @@
 ﻿node_modules/
 *.py
-*.png
 *.txt
 *.mp4
 debug*
 test*
 *preview.html
+screenshot*.png
+view_*.png
+test_*.png
