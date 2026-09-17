@@ -80,8 +80,8 @@ A cinematic, editorial-style camera store landing experience inspired by Sony Al
      npx serve .
      `
 
-3. **Open in browser:**
-   Navigate to http://localhost:3000.
+3. **Open**
+   **https://ank-media-sample-git-main-kanishka24.vercel.app/**
 
 ---
 
